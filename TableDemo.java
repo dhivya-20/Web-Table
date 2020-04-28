@@ -18,15 +18,15 @@ public class TableDemo {
 		
 		//Double click edit button
 		WebElement button=driver.findElementByXPath("(//i[@class=\"fa fa-pencil\"])[1]");
-	    Actions action=new Actions(driver);
-	    action.moveToElement(button).doubleClick().build().perform(); 
+	        Actions action=new Actions(driver);
+	    	action.moveToElement(button).doubleClick().build().perform(); 
 	    
-	    //Get the data
-	    List<WebElement> input=driver.findElementsByTagName("input");
-	    System.out.println("Number Of Elements:"+input.size());
+	   	//Get the data
+	    	List<WebElement> input=driver.findElementsByTagName("input");
+	    	System.out.println("Number Of Elements:"+input.size());
 	    
-	    //Edit the data
-	    for(WebElement value:input) {
+	    	//Edit the data
+	    	for(WebElement value:input) {
 	    	String data=value.getAttribute("value");
 	    	Thread.sleep(5000);
 	    	System.out.println(data);
